@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="a3cf600447b5fe0b4ec9b0492490151361e546c8">
+        sha1="513cef8b0f476ee501b6ee0b6ef5f4fbaefa29a6">
         <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_045d3828051aea0deb9abb16d786124d98546a5b\classes.dex" />
     </item>
     <item
@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="45ae3c80f44a173216c765d41abe49fb7fee7ea1">
+        sha1="7ada19ae3372bd7bbef6b21aec58663c1310637d">
         <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_46723c6c80b629d47c786dce688e820eb429ef10\classes.dex" />
     </item>
     <item

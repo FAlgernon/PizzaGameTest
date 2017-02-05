@@ -1,10 +1,8 @@
 package co.algernon.pizzagame;
 
 import android.content.Context;
-import android.graphics.Bitmap;
+import android.graphics.*;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Matrix;
 
 
 /**
@@ -21,6 +19,8 @@ public class PizzaMan extends GameObject {
     private Bitmap[] bodyAnimationFrames;
     private Bitmap[] pizzaAnimationFrames;
 
+    private Bitmap scaleTest;
+
     private int headOffsetX = 100;
     private int headOffsetY = 0;
 
@@ -30,7 +30,9 @@ public class PizzaMan extends GameObject {
     private int pizzaOffsetX = 0;
     private int pizzaOffsetY = 100;
 
-    private int scaleFactor = 8;
+    private int scaleFactor = 12;
+
+    private float resizeFactor = 1.0f;
 
     private float pizzaRotation = 0.0f;
 
@@ -51,6 +53,8 @@ public class PizzaMan extends GameObject {
 
     private int tmpPizzaWidth, tmpPizzaHeight;
 
+    private Paint paint = new Paint();
+
     public PizzaMan(Bitmap[] bitmaps){
         headAnimationFrames = new Bitmap[3];
         headAnimationFrames[0] = bitmaps[0];
@@ -68,6 +72,7 @@ public class PizzaMan extends GameObject {
         pizzaAnimationFrames[2] = bitmaps[8];
         pizzaAnimationFrames[3] = bitmaps[9];
 
+        scaleTest = bitmaps[10];
 
 
         headAnimation.setFrames(headAnimationFrames);
@@ -78,6 +83,11 @@ public class PizzaMan extends GameObject {
 
         pizzaAnimation.setFrames(pizzaAnimationFrames);
         pizzaAnimation.setDelay(200);
+
+
+        paint.setAntiAlias(false);
+        paint.setDither(false);
+        paint.setFilterBitmap(false);
 
     }
 
@@ -121,8 +131,6 @@ public class PizzaMan extends GameObject {
 
         setX(canvas.getWidth()/2 - 150);
         setY(canvas.getHeight()/2 - 150);
-        canvas.drawBitmap(Bitmap.createScaledBitmap( bodyAnimation.getImage(), bodyAnimation.getImage().getWidth()*scaleFactor, bodyAnimation.getImage().getHeight()*scaleFactor, false ),x + bodyOffsetX,y+bodyOffsetY,null);
-        canvas.drawBitmap(Bitmap.createScaledBitmap( headAnimation.getImage(), headAnimation.getImage().getWidth()*scaleFactor, headAnimation.getImage().getHeight()*scaleFactor, false ),x + headOffsetX,y+headOffsetY,null);
 
         Matrix matrix = new Matrix();
         //pizzaRotation += pizzaForce;
@@ -137,11 +145,26 @@ public class PizzaMan extends GameObject {
         matrix.postTranslate(x+pizzaOffsetX+px, y+pizzaOffsetY+py);
         //canvas.drawBitmap(pizzaAnimation.getImage(), matrix, null);
 
-
+        //DRAWTEST
+        Rect rectangle = new Rect(0,0,scaleTest.getWidth()*scaleFactor,scaleTest.getHeight()*scaleFactor);
+        //canvas.drawBitmap(scaleTest, null, rectangle, paint);
 
         //canvas.drawBitmap(Bitmap.createScaledBitmap( pizzaAnimation.getImage(), pizzaAnimation.getImage().getWidth()*scaleFactor, pizzaAnimation.getImage().getHeight()*scaleFactor, false ),x + pizzaOffsetX,y+pizzaOffsetY,null);
 
-        canvas.drawBitmap(Bitmap.createScaledBitmap( pizzaAnimation.getImage(), tmpPizzaWidth, tmpPizzaHeight, false ), matrix ,null);
+        canvas.drawBitmap(Bitmap.createScaledBitmap( bodyAnimation.getImage(), bodyAnimation.getImage().getWidth()*scaleFactor, bodyAnimation.getImage().getHeight()*scaleFactor, false ),x + bodyOffsetX,y+bodyOffsetY,paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap( headAnimation.getImage(), headAnimation.getImage().getWidth()*scaleFactor, headAnimation.getImage().getHeight()*scaleFactor, false ),x + headOffsetX,y+headOffsetY,paint);
+
+        canvas.drawBitmap(
+                Bitmap.createScaledBitmap(
+                        pizzaAnimation.getImage(),
+                        tmpPizzaWidth,
+                        tmpPizzaHeight,
+                        false ),
+                        matrix,
+                        paint
+        );
+
+
 
 
 

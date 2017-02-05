@@ -1,9 +1,7 @@
 package co.algernon.pizzagame;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
+import android.graphics.*;
 import android.support.v4.view.MotionEventCompat;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -25,10 +23,14 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
    // private PizzaPizza pizza;
     private PizzaMan pizzaMan;
     private Bitmap[] pizzaManAssets;
+    private Paint paint = new Paint();
+    private Bitmap scaleTest;
 
     public GamePanel(Context context)
     {
         super(context);
+
+
 
 
         //add the callback to the surfaceholder to intercept events
@@ -49,7 +51,12 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
                 BitmapFactory.decodeResource(getResources(), R.drawable.pizza_1),
                 BitmapFactory.decodeResource(getResources(), R.drawable.pizza_2),
                 BitmapFactory.decodeResource(getResources(), R.drawable.pizza_3),
-                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_4)};
+                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_4),
+                BitmapFactory.decodeResource(getResources(), R.drawable.background_small_widebounds)
+        };
+
+        scaleTest = BitmapFactory.decodeResource(getResources(), R.drawable.background_small_widebounds);
+
     }
 
     @Override
@@ -109,9 +116,27 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             final int savedState = canvas.save();
             canvas.scale(scaleFactorX, scaleFactorY);
 
-            bg.draw(canvas);
+            paint.setAntiAlias(false);
+            paint.setDither(true);
+            paint.setFilterBitmap(false);
+//DRAWTEST
+            Rect rectangle = new Rect(0,0,scaleTest.getWidth()*10,scaleTest.getHeight()*10);
+            canvas.drawBitmap(scaleTest, null, rectangle, paint);
+
+
+
+
+            //bg.draw(canvas);
             pizzaMan.draw(canvas);
             //pizza.draw(canvas);
+
+/*            paint.setAntiAlias(false);
+            paint.setDither(true);
+            paint.setFilterBitmap(false);*/
+
+
+
+
 
             canvas.restoreToCount(savedState);
         }
