@@ -107,7 +107,7 @@ public class PizzaMan extends GameObject {
     }
 
     public void draw(Canvas canvas){
-        
+
         spinVelocity += Math.random()*(wander*2)-wander;
         spinAngle += spinVelocity;
 
