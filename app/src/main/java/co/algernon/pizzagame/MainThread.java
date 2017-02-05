@@ -3,12 +3,14 @@ package co.algernon.pizzagame;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
 
+
+
 /**
  * Created by Fruanku on 10/6/2016.
  */
 
 public class MainThread extends Thread {
-    private int MAX_FPS = 30;
+    private int MAX_FPS = 60;
     private double averageFPS;
     private SurfaceHolder surfaceHolder;
     private GamePanel gamePanel;
@@ -86,7 +88,7 @@ public class MainThread extends Thread {
                     averageFPS = 1000 / ((totalTime / frameCount) / 1000000);
                     frameCount = 0;
                     totalTime = 0;
-                    System.out.println(averageFPS);
+                    //System.out.println(averageFPS);
                 }
             }
 
@@ -94,6 +96,7 @@ public class MainThread extends Thread {
 
 
     }
+
 
     public void setRunning(boolean b) {
         running = b;

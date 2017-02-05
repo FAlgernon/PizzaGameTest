@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.support.v4.view.MotionEventCompat;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -82,11 +84,12 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         thread.start();
 
     }
-    @Override
+/*    @Override
     public boolean onTouchEvent(MotionEvent event)
     {
+
         return super.onTouchEvent(event);
-    }
+    }*/
 
     public void update()
     {
@@ -113,5 +116,45 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             canvas.restoreToCount(savedState);
         }
     }
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        //
+        int action = MotionEventCompat.getActionMasked(event);
+        // update the pizza
+        if(event.getX() > this.getWidth()/2){
+            pizzaMan.bumpLeft();
+            //System.out.println("RIGHT SIDE");
+
+        }else{
+            pizzaMan.bumpRight();
+            //System.out.println("LEFT SIDE");
+        }
+        return super.onTouchEvent(event);
+        //what touch action was made...
+       /* switch(action) {
+            case (MotionEvent.ACTION_DOWN) :
+                System.out.println("Action was DOWN");
+                return true;
+            case (MotionEvent.ACTION_MOVE) :
+                System.out.println("Action was MOVE");
+                return true;
+            case (MotionEvent.ACTION_UP) :
+                System.out.println("Action was UP");
+                return true;
+            case (MotionEvent.ACTION_CANCEL) :
+                System.out.println("Action was CANCEL");
+                return true;
+            case (MotionEvent.ACTION_OUTSIDE) :
+                System.out.println("Movement occurred outside bounds of current screen element");
+                return true;
+            default :
+                return super.onTouchEvent(event);
+        }
+*/
+
+    }
+
 
 }

@@ -32,7 +32,20 @@ public class PizzaMan extends GameObject {
 
     private int scaleFactor = 8;
 
-    private int pizzaRotation = 0;
+    private float pizzaRotation = 0.0f;
+
+    private float pizzaForce = 0.0f;
+    private float bumpForce = 2.5f;
+
+    private float  elasticity = 0.1f;
+    private float  wander = 0.17f;
+    private float  spinVelocity = 0f;
+    private float  spinAngle = 90f;
+    private float  tapNormalize = 0.6f;
+    private float  deltaTap = 1000f;
+    private float  timeWait = 0f;
+    private float  failAngleA = 15f;
+    private float  failAngleB = 165f;
 
     private long startTime;
 
@@ -75,7 +88,36 @@ public class PizzaMan extends GameObject {
         pizzaAnimation.update();
     }
 
+    public void bumpLeft(){
+        //pizzaForce -= bumpForce;
+        pizzaNormalize(tapNormalize);
+    }
+
+    public void bumpRight(){
+        //pizzaForce += bumpForce;
+        pizzaNormalize(tapNormalize*-1);
+    }
+
+    public void gameOver(){
+        System.out.println("GAME OVER");
+    }
+
+    public void pizzaNormalize(float normalize){
+        spinVelocity += normalize;
+    }
+
     public void draw(Canvas canvas){
+        
+        spinVelocity += Math.random()*(wander*2)-wander;
+        spinAngle += spinVelocity;
+
+        if (spinAngle<failAngleB || spinAngle>failAngleA) {
+            //gameOver();
+        }
+
+/*    now = Date.now();
+    delta = (this.now - this.then) / 1000; // seconds since last frame*/
+
 
         setX(canvas.getWidth()/2 - 150);
         setY(canvas.getHeight()/2 - 150);
@@ -83,7 +125,7 @@ public class PizzaMan extends GameObject {
         canvas.drawBitmap(Bitmap.createScaledBitmap( headAnimation.getImage(), headAnimation.getImage().getWidth()*scaleFactor, headAnimation.getImage().getHeight()*scaleFactor, false ),x + headOffsetX,y+headOffsetY,null);
 
         Matrix matrix = new Matrix();
-        pizzaRotation += 1;
+        //pizzaRotation += pizzaForce;
 
         tmpPizzaWidth = pizzaAnimation.getImage().getWidth()*scaleFactor;
         tmpPizzaHeight = pizzaAnimation.getImage().getHeight()*scaleFactor;
@@ -91,9 +133,10 @@ public class PizzaMan extends GameObject {
         float px = tmpPizzaWidth/2;
         float py = tmpPizzaHeight/2;
         matrix.postTranslate(-tmpPizzaWidth/2, -tmpPizzaHeight/2);
-        matrix.postRotate(pizzaRotation);
+        matrix.postRotate(spinAngle);
         matrix.postTranslate(x+pizzaOffsetX+px, y+pizzaOffsetY+py);
         //canvas.drawBitmap(pizzaAnimation.getImage(), matrix, null);
+
 
 
         //canvas.drawBitmap(Bitmap.createScaledBitmap( pizzaAnimation.getImage(), pizzaAnimation.getImage().getWidth()*scaleFactor, pizzaAnimation.getImage().getHeight()*scaleFactor, false ),x + pizzaOffsetX,y+pizzaOffsetY,null);
