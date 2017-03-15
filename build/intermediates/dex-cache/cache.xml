@@ -3,156 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9ae2ac1de6fb30cfc2da81ee716db5e0bdb9761f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="513cef8b0f476ee501b6ee0b6ef5f4fbaefa29a6">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_045d3828051aea0deb9abb16d786124d98546a5b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_bf26b8f31d6aa0e6c0b75e07d074b266f7fc8fdd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_1b819145733ab4f92c5567d9ff52e923ae1bb9d3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_aa912c278d5de02623dc580b1861dc07398a474d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c121454c14095e3d0811a8b701b5cd3ac46ffbdb\classes.dex" />
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_8ce5ed90f908dd1e4e58d37d9664f193e6102242\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_65f854e769ea923aa61fe3b5168f739bd34f5b8c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3e05e7789fcaaf24d7b32de256f994295d9febbf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7066f8f0cd5cf09623ef2396633913224bfe55c8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Furanku\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_acf225781c359e51dfde987b07c01ce30954d82d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_d41e547030656d0e97fd0a6f6d704a72b3033de7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_15726bdd48225ee9439c0639c467ddb40106c710\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_79a6d9afcc7d30adb491db1ab3487d5ae81434a2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_4d7f71c64c1d27476bf565802246568690ed991e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_b746fdcc85d5ea7c5da1ccb0711c74ffa063f0c1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7ada19ae3372bd7bbef6b21aec58663c1310637d">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_46723c6c80b629d47c786dce688e820eb429ef10\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\repositories\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="E:\repositories\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_3ca6f0ff698e41148e7eddb6a99e4ff194e43fdc\classes.dex" />
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_f97793c9725cd0ef94022605f13b1d3bcc2b9351\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_c6b313c2a82fd867c396832c1f54af92301c2888\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_b2920d8751d5a50aea115d3229abb071804d3997\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="007c4d1cefbb4238e7b991c55f54db7d832746bb">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bd4ac48cb268d2d82f83c9a63758ad78a6f2599d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_6b09958322851bceb5b76ced1b14b4d7a0cdddc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c22869a1ba4677b6679df14397e6edfd0cfc6edb">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_8d79a5293011873aa4ef3f4a71422e4cfd9593da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_14e6b2c5731ad17d4e9130df07782cb5eaa22ab4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_fd6899af6360858aded5ccfb6446ec3310a92eac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_0b70cdff0531b6dd14ec36b27b2e6e191e2c4fae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_eeca94198c5b9d8bc6596fe6a2e8f206fb2d2043\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_a7f5d3cd4228dad2820a4229b8b75b9ed8cb94d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_484f19793a6bdc50c6478fa6def88b094c5ec534\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_01cf73345cd32622b851c8b4cb0322946151f75d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_d81c16e8588229401c328744c75ec2908e09fc46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_163a9b169288032fb57c0b1582794255a86ece46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Fruanku\AndroidStudioProjects\PizzaGameTest\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_56fe8208fb342fed795ef3cf14f2e66a54ef13d4\classes.dex" />
     </item>
 
 </items>

@@ -6,7 +6,7 @@ import android.graphics.Bitmap;
  * Created by Fruanku on 10/7/2016.
  */
 
-public class Animation {
+public class Animation extends GameObject {
     private Bitmap[] frames;
     private int currentFrame;
     private long startTime;
@@ -36,6 +36,14 @@ public class Animation {
             playedOnce = true;
         }
     }
+
+    public int getWidth(){
+        return getImage().getWidth();
+    }
+    public int getHeight(){
+        return getImage().getHeight();
+    }
+
     public Bitmap getImage(){
         return frames[currentFrame];
     }

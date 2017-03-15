@@ -23,8 +23,12 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
    // private PizzaPizza pizza;
     private PizzaMan pizzaMan;
     private Bitmap[] pizzaManAssets;
+    private Bitmap[] uiAssets;
     private Paint paint = new Paint();
     private Bitmap scaleTest;
+    private int uiScale = 4;
+    private Animation gameOverAnimation = new Animation();
+
 
     public GamePanel(Context context)
     {
@@ -48,12 +52,23 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
                 BitmapFactory.decodeResource(getResources(), R.drawable.chef_1),
                 BitmapFactory.decodeResource(getResources(), R.drawable.chef_2),
                 BitmapFactory.decodeResource(getResources(), R.drawable.chef_3),
-                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_1),
-                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_2),
-                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_3),
-                BitmapFactory.decodeResource(getResources(), R.drawable.pizza_4),
-                BitmapFactory.decodeResource(getResources(), R.drawable.background_small_widebounds)
+                BitmapFactory.decodeResource(getResources(), R.drawable.sprite_pizza0),
+                BitmapFactory.decodeResource(getResources(), R.drawable.sprite_pizza1),
+                BitmapFactory.decodeResource(getResources(), R.drawable.sprite_pizza2),
+                BitmapFactory.decodeResource(getResources(), R.drawable.sprite_pizza3),
+                BitmapFactory.decodeResource(getResources(), R.drawable.background_small_widebounds),
+                BitmapFactory.decodeResource(getResources(), R.drawable.armtoss_l_spritesheet),
+                BitmapFactory.decodeResource(getResources(), R.drawable.armtoss_r_spritesheet)
         };
+
+        uiAssets = new Bitmap[] {
+                BitmapFactory.decodeResource(getResources(), R.drawable.mancato),
+                BitmapFactory.decodeResource(getResources(), R.drawable.mancato_off),
+                BitmapFactory.decodeResource(getResources(), R.drawable.purplehaze)
+        };
+
+        gameOverAnimation.setFrames(new Bitmap[]{uiAssets[0],uiAssets[1]});
+        gameOverAnimation.setDelay(900);
 
         scaleTest = BitmapFactory.decodeResource(getResources(), R.drawable.background_small_widebounds);
 
@@ -100,9 +115,20 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
 
     public void update()
     {
+
+        bg.update();
         //pizza.update();
         pizzaMan.update();
-        bg.update();
+        if(!pizzaMan.gameOver) {
+
+
+        }else{
+            gameOverAnimation.update();
+
+            //wait
+            // game restart
+
+        }
     }
     @Override
     public void draw(Canvas canvas)
@@ -123,11 +149,15 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             Rect rectangle = new Rect(0,0,scaleTest.getWidth()*10,scaleTest.getHeight()*10);
             canvas.drawBitmap(scaleTest, null, rectangle, paint);
 
-
-
-
             //bg.draw(canvas);
             pizzaMan.draw(canvas);
+
+            if(pizzaMan.gameOver){
+
+
+                canvas.drawBitmap(uiAssets[2], null, rectangle, paint);
+                canvas.drawBitmap(Bitmap.createScaledBitmap(gameOverAnimation.getImage(), uiAssets[0].getWidth() * uiScale, uiAssets[0].getHeight() * uiScale, false), 0, (canvas.getHeight()/4)-(gameOverAnimation.getHeight()/2), paint);
+            }
             //pizza.draw(canvas);
 
 /*            paint.setAntiAlias(false);
@@ -148,13 +178,19 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         //
         int action = MotionEventCompat.getActionMasked(event);
         // update the pizza
-        if(event.getX() > this.getWidth()/2){
-            pizzaMan.bumpLeft();
-            //System.out.println("RIGHT SIDE");
+        if(pizzaMan.gameOver && !pizzaMan.isWaiting()){
+            pizzaMan.gameOver = false;
+        }
 
-        }else{
-            pizzaMan.bumpRight();
-            //System.out.println("LEFT SIDE");
+        if(!pizzaMan.isWaiting()){
+            if (event.getX() > this.getWidth() / 2) {
+                pizzaMan.bumpRight();
+                System.out.println("RIGHT SIDE");
+
+            } else {
+                pizzaMan.bumpLeft();
+                System.out.println("LEFT SIDE");
+            }
         }
         return super.onTouchEvent(event);
         //what touch action was made...
